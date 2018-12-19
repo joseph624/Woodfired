@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-fade  5s linear;
+  height: 45vmin;
+
+    -webkit-animation: App-logo-fade 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: App-logo-fade 5s; /* Firefox < 16 */
+        -ms-animation: App-logo-fade 5s; /* Internet Explorer */
+         -o-animation: App-logo-fade 5s; /* Opera < 12.1 */
+            animation: App-logo-fade 5s;
+ 
+
+}
+
+.App-header {
+    background-image: url("../images/header.jpg"); /* The image used */
+  background-color: #3c2221; /* Used if the image is unavailable */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3px + 2vmin);
+  color: white;
+  margin-bottom:4px;
+      -moz-box-shadow: 0px 6px 3px #3c2221;
+    -webkit-box-shadow: 0px 6px 3px #3c2221;
+    box-shadow: 0px 6px 3px #3c2221;
+ 
+}
+
+/*
+.app-footer {
+   background-image: url("../images/header.jpg");
+}
+*/
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Navbar */
+
+.transparent-nav {
+  background:transparent !important; 
+        color:white !important;
+        transition: 0.3s;
+}
+.transparent-nav .navbar-brand {
+  color: white !important;
+}
+
+ .nav-link {
+  color:white !important;
+
+}
+
+ 
+   .transparent-nav .navbar-toggler {
+ 
+  background-color:#ffffff !important;
+ }
+ 
+
+.transparent-nav-off {
+  background-color:#202020 !important;
+  transition: 0.3s;
+  -moz-box-shadow: 0px 4px 5px #5f5b5b7d9;
+  -webkit-box-shadow: 0px 4px 5px #5f5b5b7d;
+  box-shadow: 0px 4px 5px #5f5b5b7d;
+ 
+ color:#e8e8e8 !important;
+}
+
+.transparent-nav-off .navbar-brand {
+  color: #e8e8e8 !important;
+}
+
+.transparent-nav-off .nav-link {
+  color:#e8e8e8 !important;
+}
+
+
+/* End Navbar */
+
+.content-section {
+  height:auto;
+  background-color:#202020 !important;
+  padding-bottom: 120px;
+  /*background-color:#ede8c8 !important;*/
+}
+
+.content-container {
+    position: relative;
+    padding:10px 10px 60px 10px;
+    top:  50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top:50px;
+    /*top: -50px;*/
+    background-color: #a19d84;
+    height: auto;
+    min-height: 600px;
+    -moz-box-shadow: 0px 4px 5px #585858;
+    -webkit-box-shadow: 0px 4px 5px #585858;
+    box-shadow: 0px 4px 5px #585858;
+ text-align: center;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+ 
+    width: 86%;
+    max-width:  1100px;
+    margin: 0 auto;
+}
+
+.content-block {
+ height:300px;
+ line-height: 300px;
+ color:white;
+ 
+}
+
+.content-block:hover {
+ 
+    background-color:#80808054;
+    color:white;
+    margin: auto;
+}
+
+.block-title {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.content-footer {
+    
+    color: #d8d8d8;
+    font-size: 1em;
+     /* border-top: 5px solid #5f5d5d;
+     background-color: #5f5d5d; */
+    padding-top: 100px;
+   background-color: #232323;
+  
+    border-top: 1px solid #331800; 
+}
+
+.content-info-box {
+    background-color: #3c2221;
+    color: #e8e8e8;
+    border: 3px solid #5f5d5d;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content-info-border {
+    border: 4px dotted #3c2221;
+    border-radius: 3px;
+    }
+
+ul.info-box {
+  list-style-image: url('../images/peel-white.png');
+}
+ul.info-box li {
+  padding-bottom:11px;
+}
+
+ul.list-box {
+  list-style-image: url('../images/peel-black.png');
+}
+ul.list-box li {
+  padding-bottom:20px;
+}
+
+
+
+@keyframes App-logo-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes App-logo-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes App-logo-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
