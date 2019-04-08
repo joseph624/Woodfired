@@ -12,6 +12,7 @@ import LandingPage from './Landing';
 import AboutPage from './About';
 import ContactPage from './Contact';
 import MenuPage from './Menu';
+import FaqsPage from './Faqs'
 import Footer from './Footer'
 
 import * as routes from '../constants/routes';
@@ -20,25 +21,23 @@ const App = () =>
   <Router>
     <div>
       <Header />
+      <LandingPage />
+      <MenuPage />
+      {/*<AboutPage /> */}
+      <ContactPage />
+
+      <FaqsPage />
+
+       {/*<Route
+          path={routes.FAQS}
+        component={FaqsPage}
+      /> */}
+      
+ 
 
  
 
-      <Route
-        exact path={routes.LANDING}
-        component={LandingPage}
-      />
-      <Route
-        exact path={routes.ABOUT}
-        component={AboutPage}
-      />
-      <Route
-        exact path={routes.CONTACT}
-        component={ContactPage}
-      />
-      <Route
-        exact path={routes.MENU}
-        component={MenuPage}
-      />
+      
 
       <Footer />
 

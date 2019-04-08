@@ -1,159 +1,121 @@
 import React from 'react';
+import Taste from '../images/taste_small.jpg';
+
 
 const ContactPage = () =>
-  <div className="content-section">
-  		<div className="content-container">
-    <h1 className="pb-5">Contact us</h1>
+  <div id="contact" className="content-section noPadTop " >
+  
 
 
-<div className="container-fluid ">
-
-
-<div className="row   ">
-		<div className="col-lg-6 col-md-6 pb-5 text-left" >
-			 
-	 	<p>Wood-Fired Catering Co. is new to the Columbus area and we are ready to make your day as special as you envisioned. With over 10 year’s experience in the Cleveland area, we are excited to bring this unique catering option to Columbus and its surrounding cities.</p>
-		<ul className="list-box">
-		<li >
-		 With over 25 toppings, we have the ability to make over 15 types of wood-fired pizza that will be served buffet style, giving guests the ability to sample all the traditional and gourmet pizzas.
-		</li>
-		<li >
-		 Our menu includes wood-fired pizza, hand crafted pepperoni breads and our house salad. We have the ability to accommodate to dietary restrictions including Gluten free, lactose allergies, nut allergies, vegans and most others.
-		</li>
+<div className="container-fluid pt-5 ">
  
-
-		</ul>
-		</div>
-		<div className="col-lg-6 col-md-6 pb-5 content-info-box text-left">
-			<h4 className="text-center"><u>Quick Facts</u></h4>
-
-	 
-		{
-  /*Section: Contact v.2*/
-}
-;<section className="mb-4">
-  {/*Section heading*/}
-  <h2 className="h1-responsive font-weight-bold text-center my-4">
-    Contact us
-  </h2>
-  {/*Section description*/}
-  <p className="text-center w-responsive mx-auto mb-5">
-    Do you have any questions? Please do not hesitate to contact us
-    directly. Our team will come back to you within a matter of hours
-    to help you.
-  </p>
-  <div className="row">
-    {/*Grid column*/}
-    <div className="col-md-12 mb-md-0 mb-5">
-      <form
-        id="contact-form"
-        name="contact-form"
-        action="mail.php"
-        method="POST"
-      >
-        {/*Grid row*/}
-        <div className="row">
-          {/*Grid column*/}
-          <div className="col-md-6">
-            <div className="md-form mb-0">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="form-control"
-              />
-              <label htmlFor="name" className>
-                Your name
-              </label>
-            </div>
-          </div>
-          {/*Grid column*/}
-          {/*Grid column*/}
-          <div className="col-md-6">
-            <div className="md-form mb-0">
-              <input
-                type="text"
-                id="email"
-                name="email"
-                className="form-control"
-              />
-              <label htmlFor="email" className>
-                Your email
-              </label>
-            </div>
-          </div>
-          {/*Grid column*/}
-        </div>
-        {/*Grid row*/}
-        {/*Grid row*/}
-        <div className="row">
-          <div className="col-md-12">
-            <div className="md-form mb-0">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="form-control"
-              />
-              <label htmlFor="subject" className>
-                Subject
-              </label>
-            </div>
-          </div>
-        </div>
-        {/*Grid row*/}
-        {/*Grid row*/}
-        <div className="row">
-          {/*Grid column*/}
-          <div className="col-md-12">
-            <div className="md-form">
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                rows={2}
-                className="form-control md-textarea"
-                defaultValue={""}
-              />
-              <label htmlFor="message">Your message</label>
-            </div>
-          </div>
-        </div>
-        {/*Grid row*/}
-      </form>
-      <div className="text-center text-md-left">
-        <a
-          className="btn btn-primary"
-          onclick="document.getElementById('contact-form').submit();"
-        >
-          Send
-        </a>
-      </div>
-      <div className="status" />
+<div className="row justify-content-center text-center ">
+    <div className="col-sm-12 mt-5  ">
+      <h2><span>CONTACT US</span></h2>
+  
+   
+ 
     </div>
-    {/*Grid column*/}
-    {/*Grid column*/}
-    
-    {/*Grid column*/}
   </div>
-</section>
-{
-  /*Section: Contact v.2*/
-}
-
-		</div>
-	</div>
-
-	</div>
-
-
-
- 
- 
- 
 
  
 
+
+  <div className="row p-5 form-conent justify-content-center contact-page">
+
+     
+    <div className="col-lg-5 col-md-5 p-3 align-self-top">
+
+    <h3 className="  txt-black"><strong>BY EMAIL</strong></h3>
+    <br/>
+    <p>Send us an email about your event and we'll get back to you within 24 hours.</p>
+      <br/>
+ 
+      <form method="post" action="form_action.php" className="txt-black">
+        <div className="form-group">
+          <label htmlFor="fname">First Name</label>
+          <input type="text" className="form-control" id="fname" name="fname" />
+        </div>
+        <div className="form-group">
+           <label htmlFor="lname">Last Name</label> 
+          <input type="text" className="form-control" id="lname" name="lname" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" className="form-control" id="email" name="email" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone</label>
+          <input type="text" className="form-control" id="phone" name="phone" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="occasion">Occasion</label>
+          <input type="text" className="form-control" id="occasion" name="occasion" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="location">Event Location</label>
+          <input type="text" className="form-control" id="location" name="location" />
+        </div>
+
+        <div className="form-group ">
+          <label htmlFor="date">Date of event</label>
+          <input className="form-control" type="date" id="date" name="date" />
+        </div>
+        <div className="form-group ">
+          <label htmlFor="time">Time of event</label>
+          <input className="form-control" type="time" defaultValue="12:00:00" id="time" name="time" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="guests">Number of guests</label>
+          <select id="guests" className="form-control" name="guests">
+            <option>50</option>
+            <option>75</option>
+            <option>100-150</option>
+            <option>150-200</option>
+            <option>200-250</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="diet">Dietary Restrictions</label>
+          <input type="text" className="form-control" id="diet" name="diet" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Additional Information</label>
+          <textarea className="form-control" id="message" name="message" rows={4} cols={25} defaultValue={""} />
+        </div>
+        <button type="submit" className="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  
+  
+ 
+ 
+ 
+ 
+
+     
+    <div className="col-lg-5 col-md-5 p-3  align-self-top">
+
+    <h3 className="txt-black"><strong>BY PHONE</strong></h3>
+    <br/>
+    <p>Do you have a couple questions? Give us a call, we're happy to walk you through the process and answer any questions you may have. <br/><br/><a className="contact-phone" href="tel:4403394157">Cleveland - 440.339.4157</a>
+    <br/>
+    <a className="contact-phone" href="tel:2164030874">Columbus - 216.403.0874</a></p> 
+
+
+<p className="txt-dark  "><strong>BOOKINGS: </strong>Don’t hesitate to inquire or give us a call. We are here to answer all your questions and work through all the details. We are here to answer all your questions and work through all the details with you. It’s never too early to plan for your next event and solidify the date. We understand getting the food checked off the long list of tasks planning an event has, will give you the peace of mind as an event date starts to approach.</p>
+<p className="txt-dark  "><strong>PAYMENT DETAILS: </strong>We require a $250 deposit to reserve the date of your event. The remaining payment will be collected upon completion of the event. An 18% gratuity will be added for the on-sight staff. We do not charge any fee for set up, clean up or travel within a 25 mile radius of our location in Gahanna, OH.</p>
+ 
+ 
+    <img alt="pizza display"  className="contact-img" src={Taste} />
+
+</div>
+
+</div>
+ 
+ 
+
+ 
 </div>
 </div>
 
